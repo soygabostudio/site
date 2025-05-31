@@ -756,6 +756,27 @@ footer {
 
 
 @media (max-width: 600px) {
+
+header {
+    top: 40px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    color: #333333;
+    padding: 10px 0;
+    margin: 0 auto;
+    width: 70%;
+    z-index: 3;
+    background-color: transparent;
+  
+}
+ #circulito2 {
+        position: absolute;
+        width: 200px;
+        right: 30px;
+        top: 80px;
+        fill: #2F2A95;
+  }
+
     .formulario-contacto {
         padding: 20px;
     }
