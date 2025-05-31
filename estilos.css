@@ -1,0 +1,856 @@
+/* Estilos generales */
+html {
+    scroll-behavior: smooth;
+    font-size: 14px;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: "Dosis", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333333;
+    overflow-x: hidden;
+}
+
+header {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    color: #333333;
+    padding: 10px 0;
+    margin: 0 auto;
+    width: 70%;
+    z-index: 3;
+    background-color: transparent;
+  
+}
+
+.container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 170px;
+    height: auto;
+    fill: #333333;
+}
+
+.logo g {
+    width: auto;
+}
+
+.logo:hover {
+    fill: #2F2A95;
+    
+}
+
+.logo::after {
+    
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+nav ul li a {
+    padding: 8px 15px;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 2.5px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #333333;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+nav ul li a:hover {
+    color: #2F2A95;
+    border-color: #2F2A95;
+}
+
+
+/*.blend-light {
+    mix-blend-mode: difference;
+    color: white;
+    }
+
+    .blend-light svg path,
+.blend-light .cls-1 {
+    mix-blend-mode: difference;
+    fill: white;
+}*/
+
+/* Secciones */
+.section {
+    padding: 40px 100px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.section h1 {
+    font-size: 4.2rem;
+    text-transform: uppercase;
+    line-height: 65px;
+    font-weight: 800;
+}
+
+#inicio {
+    padding-top:0;
+    width: 80%;
+    margin: auto;
+    color: #333333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+    .inicio-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+    .inicio-info h1 {
+        color: #F87C56;
+        font-size: 9rem;
+    }
+    .inicio-info h1 span {
+        font-weight: 400;
+    }
+    .inicio-info p {
+        font-weight: 500;
+        font-size: 1em;
+        line-height: 1em;
+        text-align: center;
+        width: 65%;
+        margin: auto;
+    }
+    #circulito {
+        position: absolute;
+        width: 600px;
+        left: -150px;
+        bottom: -70px;
+        fill: #2F2A95;
+    }
+    #circulito2 {
+        position: absolute;
+        width: 350px;
+        right: -20px;
+        top: 70px;
+        fill: #2F2A95;
+    }
+#acerca {
+    height: 100vh;
+    background-color: #ffd17f;
+    color: #006269;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items:center;
+    padding-top: 0;
+    margin-bottom: 0;
+    overflow: hidden;
+}
+#acerca div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+#acerca p {
+    text-align: center;
+    width: 75%;
+}
+.forma1 {
+    position: absolute;
+    width: 300px;
+    top: -40px;
+    right: -20px;
+}
+.forma2 {
+    display: none;
+    position: absolute;
+    width: 300px;
+}
+.forma3 {
+    position: absolute;
+    width: 400px;
+    bottom: 60px;
+    right: -100px;
+    z-index: 3;
+}
+.forma4 {
+    display: none;
+    position: absolute;
+    width: 300px;
+}
+.forma5 {
+    position: absolute;
+    width: 200px;
+    top: 40px;
+    right: 520px;
+    z-index: 3;
+}
+/* Estilo para la foto de perfil */
+.profile-photo {
+    position: relative;
+    width: 400px;
+    border-radius: 200px;
+    z-index: 2;
+}
+
+#servicios {
+    background-color: #fba489;
+    color:#2F2A95;
+    height: 100vh;
+    padding-top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap:60px;
+    margin-bottom: 0;
+    overflow: hidden;
+}
+.serv-descripcion {
+    width: 45%;
+}
+.serv-descripcion h1,p {
+    width: 100%;
+}
+#contacto {
+    padding-top: 120px;
+    background-color: #ffd17f;
+    color: #006269;
+    height: 100vh;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+    gap:50px;
+}
+    #contacto .container{
+        display: flex;
+        height: auto;
+        flex-direction: row;
+        width: 100%;
+        gap: 100px;
+        height: auto;
+        justify-content: center;
+    }
+    #contacto h1 {
+        color: #fff;
+    }
+    #contacto h1,p,div {
+        position: relative;
+        z-index: 1;
+        margin: 0;
+    }
+    #contacto img {
+        display: none;
+    }
+    .imggrande {
+        position: absolute;
+        right: 0;
+        bottom: 1;
+        width: 80vw;
+        z-index: 0;
+    }
+    .copy {
+        position: relative;
+        bottom: 60px;
+        left: 20px;
+        z-index: 3;
+        transform: translateX(center);
+    }
+
+    #main-image {
+        transition: transform 0.3s ease;
+    }
+    #main-image:hover{
+        transform: scale(1.05);
+    }
+/* Efectos de imagen */
+/*.main-image {
+    width: 80%;
+    max-width: 600px;
+    margin-top: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.main-image:hover {
+    transform: scale(1.05);
+}
+
+/* Diseño para las secciones de servicios */
+.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+    height: 100vh;
+    width: 600px;
+    overflow-y: scroll;
+    scrollbar-color: #fba489;
+}
+
+.services h2 {
+    text-align: left;
+    font-size: 35px;
+}
+
+.service {
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+}
+
+    .serviceimg1 {
+        width: 540px;
+        height: 360px;
+        background-image: url(imagenes/proyecto1.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .serviceimg2 {
+        width: 540px;
+        height: 360px;
+        background-image: url(imagenes/proyecto2.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .serviceimg3,.serviceimg4 {
+        width: 540px;
+        height: 360px;
+    }
+
+.service img {
+    width: 100%;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.service img:hover {
+    transform: scale(1.05);
+}
+
+
+/* Estilo para los enlaces sociales */
+.socials {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+.socials a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #2c3e50;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 5px;
+    transition: background-color 0.3s;
+}
+
+.socials a:hover {
+    background-color: #f39c12;
+}
+
+/* Footer */
+footer {
+    background-color: #ffd17f;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.formulario-contacto {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    max-width: 500px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 1em;
+}
+
+.formulario-contacto button {
+    background-color: #2F2A95;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.formulario-contacto button:hover {
+    background-color: #1e1b75;
+}
+
+/* Menú responsive con animación */
+.menu-toggle {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+    color: #333;
+    z-index: 1001;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.close-menu {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-left: auto;
+    color: #333;
+    z-index: 1001;
+}
+.menu_hamburguesa{
+    display: none;
+}
+.label_hamburguesa{
+    display: none;
+}
+@media (max-width: 768px) {
+    .label_hamburguesa {
+        display: block;
+}
+    .menu_hamburguesa:checked + .nav-links {
+    height: calc(90vh - 62.5px);
+}
+   
+.logo {
+    color: var(--color_blanco);
+}
+
+.list_icon {
+    color: var(--color_blanco);
+    cursor: pointer;
+}
+.nav-links {
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    border-radius: 50px;
+    top: 80px;
+    left: 0;
+    height: 0;
+    overflow: hidden;
+    /* height: calc(100vh - var(--altura_header)); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    font-size: 2rem;
+    transition: all .3s;
+}
+
+.nav-links a {
+    border-width: 4px;
+}
+    /*.menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        background-color: #f4f4f9;
+        width: 75%;
+        height: 100%;
+        padding: 40px 20px;
+        box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+        z-index: 999;
+        transition: right 0.4s ease-in-out;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .nav-links li {
+        margin: 20px 0;
+    }
+
+    .close-menu {
+        display: block;
+        align-self: flex-end;
+    }*/
+
+    header .container {
+        justify-content: space-between;
+    }
+
+    #inicio {
+    width: 100%;
+    }
+
+    .inicio-info{
+        width: 100%;
+    }
+    .inicio-info h1 {
+        color: #F87C56;
+        font-size: 7em;
+    }
+    
+    .inicio-info p {
+        font-weight: 500;
+        font-size: 1em;
+        line-height: 1em;
+        text-align: center;
+        width: 80%;
+        margin: auto;
+    }
+    #circulito {
+        width: 500px;
+        left: -200px;
+        bottom: -140px;
+        fill: #2F2A95;
+    }
+    #circulito2 {
+        position: absolute;
+        width: 250px;
+        right: -60px;
+        top: 90px;
+        fill: #2F2A95;
+    }
+#acerca {
+    height: auto;
+    background-color: #ffd17f;
+    color: #006269;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items:center;
+    padding-top: 100px;
+    margin-bottom: 0;
+    overflow: hidden;
+    gap: 50px;
+}
+#acerca div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+#acerca p {
+    text-align: center;
+    width: 75%;
+}
+.forma1 {
+    position: absolute;
+    width: 200px;
+    top: -40px;
+    right: -30px;
+}
+.forma2 {
+    display: none;
+    position: absolute;
+    width: 300px;
+}
+.forma3 {
+    position: absolute;
+    width: 300px;
+    bottom: 20px;
+    right: -80px;
+    z-index: 3;
+}
+.forma4 {
+    display: none;
+    position: absolute;
+    width: 300px;
+}
+.forma5 {
+    position: absolute;
+    width: 200px;
+    top: 250px;
+    left: -55px;
+    z-index: 3;
+}
+/* Estilo para la foto de perfil */
+.profile-photo {
+    position: relative;
+    width: 400px;
+    border-radius: 230px;
+    z-index: 2;
+}
+
+#servicios {
+    padding-top: 100px;
+    flex-direction: column;
+    height: 120vh;
+}
+.serv-descripcion {
+    width: 100%;
+}
+.services h2 {
+    text-align: center;
+    font-size: 35px;
+}
+
+.service {
+    padding: 20px;
+    border-radius: 10px;
+    width: auto;
+}
+
+    .serviceimg1 {
+        width: 540px;
+        height: 360px;
+        background-image: url(imagenes/proyecto1.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .serviceimg2 {
+        width: 540px;
+        height: 360px;
+        background-image: url(imagenes/proyecto2.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .serviceimg3,.serviceimg4 {
+        width: 540px;
+        height: 360px;
+    }
+
+.service img {
+    width: 100%;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.service img:hover {
+    transform: scale(1.05);
+}
+#contacto {
+    padding-top: 100px;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+    gap:50px;
+}
+    #contacto .container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 100px;
+        height: auto;
+        justify-content: center;
+    }
+    #contacto h1,p,div {
+        position: relative;
+        z-index: 1;
+        margin: 0;
+    }
+    #contacto img {
+        display: none;
+    }
+    .imggrande {
+        position: absolute;
+        right: 0;
+        bottom: 1;
+        width: 80vw;
+        z-index: 0;
+    }
+    .copy {
+        position: relative;
+        bottom: 60px;
+        left: 20px;
+        z-index: 3;
+        transform: translateX(center);
+    }
+
+    #main-image {
+        transition: transform 0.3s ease;
+    }
+    #main-image:hover{
+        transform: scale(1.05);
+    }
+    .socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.socials p{
+    display: none;
+}
+.socials a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #2c3e50;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 5px;
+    transition: background-color 0.3s;
+}
+
+.socials a:hover {
+    background-color: #f39c12;
+}
+}
+
+
+@media (max-width: 600px) {
+    .formulario-contacto {
+        padding: 20px;
+    }
+
+    .formulario-contacto input,
+    .formulario-contacto textarea {
+        font-size: 0.95em;
+    }
+
+    #inicio {
+    width: 100%;
+    }
+
+    .inicio-info{
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+    .inicio-info h1 {
+        color: #F87C56;
+        font-size: 5em;
+    }
+    
+    .inicio-info p {
+        font-weight: 500;
+        font-size: 1.3em;
+        line-height: 1em;
+        text-align: center;
+        width: 100%;
+        margin: auto;
+    }
+    #circulito {
+        width: 400px;
+        left: -150px;
+        bottom: -140px;
+        fill: #2F2A95;
+    }
+    #circulito2 {
+        position: absolute;
+        width: 200px;
+        right: -60px;
+        top: 90px;
+        fill: #2F2A95;
+    }
+#acerca {
+    height: auto;
+    background-color: #ffd17f;
+    color: #006269;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items:center;
+    padding-top: 100px;
+    margin-bottom: 0;
+    overflow: hidden;
+    gap: 50px;
+}
+#acerca div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+#acerca p {
+    text-align: center;
+    width: 100%;
+}
+.forma1 {
+    position: absolute;
+    width: 160px;
+    top: -40px;
+    right: -30px;
+}
+.forma2 {
+    display: none;
+    position: absolute;
+    width: 300px;
+}
+.forma3 {
+    position: absolute;
+    width: 250px;
+    bottom: 20px;
+    right: -80px;
+    z-index: 3;
+}
+.forma4 {
+    display: none;
+    position: absolute;
+    width: 300px;
+}
+.forma5 {
+    position: absolute;
+    width: 150px;
+    top: 250px;
+    left: -55px;
+    z-index: 3;
+}
+}
